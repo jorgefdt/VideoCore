@@ -670,10 +670,12 @@ namespace videocore { namespace simpleApi {
 
 
 - (AVCaptureDevice*) getCaptureDevice {
-    AVCaptureDevice* ret = nil
+    AVCaptureDevice* ret = nil;
     if(m_cameraSource) {
-        ret = m_cameraSource->getCaptureDevice()
+        ret = m_cameraSource->getCaptureDevice();
     }
+    
+    return ret;
 }
 
 
