@@ -30,6 +30,7 @@
 #include <videocore/transforms/IOutput.hpp>
 #include <CoreVideo/CoreVideo.h>
 #include <glm/glm.hpp>
+#include <AVFoundation/AVFoundation.h>
 
 
 namespace videocore { namespace iOS {
