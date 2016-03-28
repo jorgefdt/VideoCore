@@ -208,6 +208,14 @@ namespace videocore { namespace iOS {
         }
     }
 
+    
+    AVCaptureDevice*
+    CameraSource::getCaptureDevice()
+    {
+        return (AVCaptureDevice*)m_captureDevice;
+    }  
+    
+
     void
     CameraSource::getPreviewLayer(void** outAVCaptureVideoPreviewLayer)
     {

@@ -472,7 +472,7 @@ namespace videocore { namespace simpleApi {
                        cameraState:(VCCameraState) cameraState
                         aspectMode:(VCAspectMode)aspectMode
 {
-    printf(">>>>>>> JORGE SUBLIME 3\n\n");
+    printf(">>>>>>> VIDEOCORE: JORGE VERSION\n\n");
 
     self.bitrate = bps;
     self.videoSize = videoSize;
@@ -667,6 +667,15 @@ namespace videocore { namespace simpleApi {
         m_cameraSource->getPreviewLayer((void**)previewLayer);
     }
 }
+
+
+- (AVCaptureDevice*) getCaptureDevice {
+    AVCaptureDevice* ret = nil
+    if(m_cameraSource) {
+        ret = m_cameraSource->getCaptureDevice()
+    }
+}
+
 
 //Set property filter for the new enum + set dynamically the sourceFilter for the video mixer
 - (void)setFilter:(VCFilter)filterToChange {

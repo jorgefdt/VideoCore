@@ -69,6 +69,7 @@ namespace videocore { namespace iOS {
          */
         void setupCamera(int fps = 15, bool useFront = true, bool useInterfaceOrientation = false, NSString* sessionPreset = nil, void (^callbackBlock)(void) = nil);
 
+        AVCaptureDevice* getCaptureDevice();
         
         /*!
          *  Toggle the camera between front and back-facing cameras.
