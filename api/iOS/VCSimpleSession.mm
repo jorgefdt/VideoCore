@@ -472,6 +472,8 @@ namespace videocore { namespace simpleApi {
                        cameraState:(VCCameraState) cameraState
                         aspectMode:(VCAspectMode)aspectMode
 {
+    printf(">>>>>>> JORGE SUBLIME\n\n");
+
     self.bitrate = bps;
     self.videoSize = videoSize;
     self.fps = fps;
